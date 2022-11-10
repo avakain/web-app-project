@@ -1,0 +1,27 @@
+header{
+    display: grid;
+    grid-template-columns: 1.6fr .8fr .7fr 1.4fr;
+    grid-template-rows: 100px;
+    place-items: center;
+    grid-gap: 0;
+    background-color: rgb(96, 117, 238);
+    color: white;
+    font-weight: 200;
+  }
+
+
+  header a:nth-of-type(2){
+    border-left: 2px solid rgba(255, 255, 255, 0.367);
+  }
+
+  header img {
+    width: 60%;
+  }
+
+  header svg{
+    fill: white;
+}
+
+h1,h2 {
+  font-weight: 100;
+}

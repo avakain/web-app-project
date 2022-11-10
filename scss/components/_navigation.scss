@@ -1,0 +1,20 @@
+/* ============================================= */
+/*              Navigation                       */
+/* ============================================= */
+nav {
+background-color: rgb(68, 68, 163);
+padding: 1em 4em;
+justify-content: space-around;
+}
+
+nav svg {
+    width: 60%;
+    fill: white;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0;
+    margin: 0;
+  }
