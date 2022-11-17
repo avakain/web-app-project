@@ -1,0 +1,19 @@
+.button{
+    &-primary{
+        @include button;
+        color: $white;
+        background-color: $main-color;
+    }
+
+    &-disabled{
+        @include button;
+        color: $white;
+        background-color: $grey;
+    }
+
+}
+
+.settings-button {
+    display: grid;
+    grid-template-columns: auto auto;
+}

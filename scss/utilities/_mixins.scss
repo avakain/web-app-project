@@ -1,0 +1,15 @@
+@mixin button {
+    font-size: 1em;
+    text-transform: uppercase;
+    padding: 1em;
+    border: none;
+    border-radius: 3px;
+    margin: .5em;
+}
+
+@mixin greendot {
+    padding: .3em;
+    border-radius: 50%;
+    background:#3cd14e;
+    color: #3cd14e;
+}

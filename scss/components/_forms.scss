@@ -1,0 +1,121 @@
+
+
+    
+
+
+.message form {
+    display: flex;
+    flex-direction: column;
+    
+    label{
+        font-size: 1.2em;
+        font-weight: 700;
+    }
+    
+    ::placeholder{    
+        font-size: 1.2em;
+        padding: .5em .2em;
+        text-transform: capitalize;
+    }
+}
+
+input{
+    border-radius: 5px;
+    border: 1px solid $light-grey;
+    background-color: $light-grey;
+    margin: 1em;
+    padding: 0 .5em;
+    &[type=submit]{ 
+        @include button;
+        background-color: $main-color;
+        color: $white;
+        margin: 0 1em;
+    }
+    &[type=text]{
+        padding: 1rem .2rem;
+        text-transform: capitalize;
+    }
+    &:focus::placeholder {
+        color: transparent;
+      }
+
+} 
+
+textarea {
+    margin: 1em;
+    border-radius: 5px;
+    border: 1px solid $light-grey;
+    background-color: $light-grey;
+    &:focus::placeholder {
+        color: transparent;
+      }
+
+}
+
+
+
+#timezone-offset{
+    border-radius: 5px;
+    font-size: 1.2rem;
+    padding: .5em .2em;
+    text-transform: capitalize;
+    border: 1px solid $light-grey;
+    background-color: $light-grey;
+    color: $grey;
+    margin: 0 1em;
+    width: -webkit-fill-available;
+}
+
+.switch{
+
+    &-text{
+        label{
+        display: flex;
+        flex: 30%;
+        margin: .5em;
+        span {
+            max-width: 23%;
+            margin-left: auto;
+            padding-left: 20px;
+            span {
+                padding-left: 5px;
+            }
+        }
+    }
+    }
+    &-text{
+        padding: 0 3px; 
+    }
+}
+
+
+
+.settings h3{
+    padding-left: 1em;
+}
+
+.message{
+    margin: 1em;
+    grid-area: ms;
+}
+
+
+.settings{
+    grid-area: st;
+}
+
+.switch-ios.switch-light input:checked ~ span {
+    border-color: $light-grey;
+    box-shadow: inset 0 0 0 30px $main-color;
+  }
+
+  .switch-ios.switch-light input:checked ~ span a {
+
+    border-color: $light-grey;
+  }
+
+
+  .switch-ios.switch-light > span span:first-of-type {
+    opacity: 1;
+    padding-left: 2.2em;
+}
